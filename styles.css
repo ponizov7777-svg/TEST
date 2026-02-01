@@ -666,21 +666,18 @@ a{ color:inherit; }
 }
 .section,
 .hero,
-.footer,
-.mobile{
-  background: rgba(255,255,255,.40);
-  border-top: 1px solid rgba(255,255,255,.35);
-  border-bottom: 1px solid rgba(19,19,19,.06);
+.footer{
+  position: relative;
 }
 
-/* Если браузер умеет blur фона — включаем настоящий “frosted glass” */
-@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))){
-  .section,
-  .hero,
-  .footer,
-  .mobile{
-    background: rgba(255,255,255,.28);
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
-  }
+.section::before,
+.hero::before,
+.footer::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  border-radius: 0; /* у секций обычно без скруглений */
+  background: linear-gradient(180deg, rgba(255,255,255,.22), rgba(255,255,255,0));
+  opacity: .9;
 }
