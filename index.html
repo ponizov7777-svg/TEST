@@ -5,25 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
 
-  <title>Клиника восстановления суставов без операции — мануальная терапия, массаж, косметология</title>
-  <meta name="description" content="Лечение суставов и боли в спине без операции: диагностика причины, мануальная терапия, массаж, восстановление. Косметология — отдельное направление. Запись на консультацию." />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Клиника восстановления суставов без операции" />
-  <meta property="og:description" content="Диагностика причины боли, мануальная терапия, массаж, восстановление. Запись на консультацию." />
+  <title>Клиника доктора Хамза — суставы без операции</title>
+  <meta name="description" content="Мануальная терапия, лечение суставов без операции, косметология. Запись онлайн и консультация." />
 
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="data:," />
 </head>
 
 <body>
-  <a class="skip" href="#content">Перейти к содержимому</a>
+  <a class="skip" href="#main">Перейти к содержимому</a>
 
   <header class="header" data-elevate>
     <div class="container nav">
-      <a class="brand" href="#" aria-label="На главную">
+      <a class="brand" href="#top" aria-label="На главную">
         <span class="brand__mark" aria-hidden="true">H</span>
         <span class="brand__text">
-          <strong class="brand__name">Клиника восстановительной медицины</strong>
+          <strong class="brand__name">Клиника доктора Хамза</strong>
           <span class="brand__tag">Суставы без операции • Мануальная терапия • Косметология</span>
         </span>
       </a>
@@ -36,14 +33,24 @@
         <a href="#contacts">Контакты</a>
       </nav>
 
-      <div class="actions">
-        <a class="phone" href="tel:+78123137464" aria-label="Позвонить">8 (812) 313‑74‑64</a>
+      <!-- Desktop actions -->
+      <div class="actions actions--desktop" aria-label="Действия">
+        <a class="phone" href="tel:+78123137464" aria-label="Позвонить">8&nbsp;(812)&nbsp;313‑74‑64</a>
         <button class="btn btn--primary" data-open-modal>Записаться</button>
       </div>
 
-      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" data-burger>
-        <span></span><span></span><span></span>
-      </button>
+      <!-- Mobile actions -->
+      <div class="actions actions--mobile" aria-label="Действия на мобильном">
+        <a class="iconbtn" href="tel:+78123137464" aria-label="Позвонить">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M6.6 10.8c1.7 3.3 3.3 4.9 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.9 2.9z"/>
+          </svg>
+        </a>
+
+        <button class="burger iconbtn" type="button" aria-label="Открыть меню" aria-expanded="false" data-burger>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
 
     <div class="mobile" data-mobile hidden>
@@ -53,305 +60,250 @@
         <a href="#team">Специалисты</a>
         <a href="#reviews">Отзывы</a>
         <a href="#contacts">Контакты</a>
+
+        <a class="mobile__call" href="tel:+78123137464">
+          Позвонить: 8&nbsp;(812)&nbsp;313‑74‑64
+        </a>
+
         <button class="btn btn--primary btn--full" data-open-modal>Записаться</button>
       </div>
     </div>
   </header>
 
-  <main id="content">
-    <section class="hero">
+  <main id="main" class="main">
+    <section class="hero" id="top">
       <div class="container hero__grid">
-        <div class="hero__main">
-          <div class="badge">Первичный приём: диагностика причины боли + план восстановления</div>
-
-          <h1 class="h1">Суставы и спина без операции — бережно, точно, с понятным планом</h1>
-
-          <p class="lead">
-            Мы начинаем с оценки причины боли и ограничений движения, затем подбираем безопасные техники:
-            мануальная терапия, массаж, восстановление функции. Косметология — отдельное, комфортное направление.
-          </p>
+        <div class="hero__main card">
+          <p class="badge">Санкт‑Петербург • Приём по записи</p>
+          <h1 class="h1">Суставы без операции — бережно и по плану лечения</h1>
+          <p class="lead">Комбинируем диагностику, мануальные техники и восстановление, чтобы вернуть движение и снизить боль.</p>
 
           <div class="hero__cta">
-            <button class="btn btn--primary" data-open-modal>Записаться на консультацию</button>
-            <a class="btn btn--ghost" href="#approach">Как проходит приём</a>
+            <button class="btn btn--primary" data-open-modal>Записаться на приём</button>
+            <a class="btn btn--ghost" href="#services">Смотреть услуги</a>
           </div>
 
           <div class="trust">
             <div class="trust__item">
               <span class="trust__icon" aria-hidden="true">✓</span>
-              <span>Безопасность: сначала диагностика, потом воздействие</span>
+              <span>План лечения на 1‑й консультации</span>
             </div>
             <div class="trust__item">
               <span class="trust__icon" aria-hidden="true">✓</span>
-              <span>План: этапы, сроки, контроль результата</span>
+              <span>Аккуратные методики</span>
             </div>
             <div class="trust__item">
               <span class="trust__icon" aria-hidden="true">✓</span>
-              <span>Сервис клиники: тихо, чисто, без очередей</span>
+              <span>Прозрачная стоимость</span>
             </div>
           </div>
         </div>
 
         <aside class="hero__side">
-          <div class="card card--soft">
-            <div class="card__title">Быстрая запись</div>
-            <p class="card__text">Оставьте телефон — администратор уточнит жалобы и подберёт время.</p>
-            <form class="mini-form" data-lead-form>
-              <label class="field">
-                <span class="field__label">Имя</span>
-                <input class="input" name="name" autocomplete="name" placeholder="Например, Анна" />
-              </label>
-
-              <label class="field">
-                <span class="field__label">Телефон</span>
-                <input class="input" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 ___ ___‑__‑__" required />
-              </label>
-
-              <button class="btn btn--primary btn--full" type="submit">Отправить</button>
-              <p class="fine">Нажимая «Отправить», вы соглашаетесь на обработку персональных данных.</p>
-            </form>
+          <div class="kpi">
+            <div class="kpi__item">
+              <div class="kpi__num">15+</div>
+              <div class="kpi__label">лет практики</div>
+            </div>
+            <div class="kpi__item">
+              <div class="kpi__num">4.9</div>
+              <div class="kpi__label">средняя оценка</div>
+            </div>
+            <div class="kpi__item">
+              <div class="kpi__num">1</div>
+              <div class="kpi__label">клиника в центре</div>
+            </div>
           </div>
 
-          <div class="card">
-            <div class="kpi">
-              <div class="kpi__item"><b>1 визит</b><span>чёткий план лечения</span></div>
-              <div class="kpi__item"><b>Без операции</b><span>когда это возможно</span></div>
-              <div class="kpi__item"><b>Премиум‑сервис</b><span>внимание к деталям</span></div>
-              <div class="kpi__item"><b>Честно</b><span>без громких обещаний</span></div>
-            </div>
+          <div class="card card--soft">
+            <h2 class="h2">Быстрая запись</h2>
+            <p class="muted">Оставьте контакт — администратор уточнит время и направит схему проезда.</p>
+            <button class="btn btn--primary btn--full" data-open-modal>Записаться</button>
           </div>
         </aside>
       </div>
     </section>
 
-    <section id="services" class="section">
+    <section class="section" id="services">
       <div class="container">
-        <div class="head">
-          <h2 class="h2">Направления</h2>
-          <p class="sub">Структура услуг “как в клинике”: аккуратно, ясно, без агрессии.</p>
+        <div class="section__head">
+          <h2 class="h2">Услуги</h2>
+          <p class="muted">Коротко и по делу: что делаем и для чего.</p>
         </div>
 
-        <div class="grid grid--2">
-          <article class="service">
-            <div>
-              <h3 class="h3">Лечение суставов без операции</h3>
-              <p class="p">Комплекс: диагностика, работа с причиной боли, восстановление функции, профилактика рецидивов.</p>
-              <ul class="list">
-                <li>Боль в колене/тазобедренном/плече.</li>
-                <li>Ограничение подвижности.</li>
-                <li>Перегрузки, последствия травм.</li>
-              </ul>
-            </div>
-            <span class="tag">Ортопедия/реабилитация</span>
+        <div class="grid grid--3">
+          <article class="service card">
+            <h3 class="h3">Мануальная терапия</h3>
+            <p class="muted">Снимаем спазм, улучшаем подвижность и уменьшаем болевой синдром.</p>
+            <a class="link" href="#contacts">Уточнить стоимость</a>
           </article>
 
-          <article class="service">
-            <div>
-              <h3 class="h3">Мануальная терапия</h3>
-              <p class="p">Мягкие техники для восстановления движения и уменьшения боли с учётом противопоказаний.</p>
-              <ul class="list">
-                <li>Шея, грудной и поясничный отдел.</li>
-                <li>Мышечно‑фасциальные цепи.</li>
-                <li>Поддержка осанки и нагрузки.</li>
-              </ul>
-            </div>
-            <span class="tag">Деликатно</span>
+          <article class="service card">
+            <h3 class="h3">Лечение суставов</h3>
+            <p class="muted">План восстановления, контроль динамики, рекомендации по нагрузкам.</p>
+            <a class="link" href="#contacts">Записаться</a>
           </article>
 
-          <article class="service">
-            <div>
-              <h3 class="h3">Медицинский массаж</h3>
-              <p class="p">Снятие спазма и перегрузки, улучшение трофики тканей, поддержка восстановления.</p>
-              <ul class="list">
-                <li>Спина, шея, поясница.</li>
-                <li>Восстановление после нагрузок.</li>
-                <li>Курс по плану специалиста.</li>
-              </ul>
-            </div>
-            <span class="tag">По назначению</span>
-          </article>
-
-          <article class="service">
-            <div>
-              <h3 class="h3">Косметология</h3>
-              <p class="p">Эстетические процедуры в отдельном потоке сервиса: приватность, стерильность, спокойный ритм.</p>
-              <ul class="list">
-                <li>Чистые протоколы и расходники.</li>
-                <li>Деликатные зоны и сервис.</li>
-                <li>План процедур без “продаж”.</li>
-              </ul>
-            </div>
-            <span class="tag">Эстетика</span>
+          <article class="service card">
+            <h3 class="h3">Косметология</h3>
+            <p class="muted">Уходовые и инъекционные процедуры по показаниям.</p>
+            <a class="link" href="#contacts">Консультация</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="approach" class="section section--soft">
+    <section class="section" id="approach">
       <div class="container">
-        <div class="head">
-          <h2 class="h2">Подход, который создаёт доверие</h2>
-          <p class="sub">Премиум ощущение — это спокойствие, ясность шагов и контроль результата.</p>
+        <div class="section__head">
+          <h2 class="h2">Подход</h2>
+          <p class="muted">Без “магии” — только понятные шаги.</p>
         </div>
 
         <div class="grid grid--4">
-          <div class="feat">
-            <b>1. Оценка и диагностика</b>
-            <p>Анамнез, тесты движения, ограничения и противопоказания.</p>
+          <div class="feat card">
+            <div class="feat__top">
+              <span class="feat__num">01</span>
+              <span class="tag">Диагностика</span>
+            </div>
+            <p>Собираем симптомы, осматриваем, уточняем ограничения.</p>
           </div>
-          <div class="feat">
-            <b>2. Безопасный план</b>
-            <p>Понятные этапы, ожидаемые ощущения, критерии результата.</p>
-          </div>
-          <div class="feat">
-            <b>3. Воздействие</b>
-            <p>Мануальные техники и массаж — бережно и по показаниям.</p>
-          </div>
-          <div class="feat">
-            <b>4. Закрепление</b>
-            <p>Рекомендации, режим нагрузки, контроль динамики.</p>
-          </div>
-        </div>
 
-        <div class="cta">
-          <div>
-            <div class="cta__title">Запишем на первичную консультацию</div>
-            <p class="cta__text">Оставьте телефон — свяжемся и подберём специалиста по вашему запросу.</p>
+          <div class="feat card">
+            <div class="feat__top">
+              <span class="feat__num">02</span>
+              <span class="tag">План</span>
+            </div>
+            <p>Согласуем курс и ожидаемый результат, сроки и бюджет.</p>
           </div>
-          <button class="btn btn--primary" data-open-modal>Записаться</button>
+
+          <div class="feat card">
+            <div class="feat__top">
+              <span class="feat__num">03</span>
+              <span class="tag">Процедуры</span>
+            </div>
+            <p>Работаем бережно, с контролем реакции организма.</p>
+          </div>
+
+          <div class="feat card">
+            <div class="feat__top">
+              <span class="feat__num">04</span>
+              <span class="tag">Закрепление</span>
+            </div>
+            <p>Домашние рекомендации и профилактика рецидивов.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="team" class="section">
+    <section class="section" id="team">
       <div class="container">
-        <div class="head">
+        <div class="section__head">
           <h2 class="h2">Специалисты</h2>
-          <p class="sub">Здесь замените карточки на реальные: ФИО, стаж, образование, специализация.</p>
+          <p class="muted">Опыт и аккуратная работа — ключевое.</p>
         </div>
 
-        <div class="grid grid--3">
-          <article class="doc">
-            <div class="avatar" aria-hidden="true"></div>
-            <h3 class="h3">Врач‑ортопед / реабилитолог</h3>
-            <p class="p">Стаж: 10+ лет • Приём: суставы, боль, восстановление движения.</p>
-            <button class="link" data-open-modal>Записаться к специалисту</button>
+        <div class="grid grid--2">
+          <article class="doc card">
+            <div class="doc__ph" aria-hidden="true">Фото</div>
+            <div class="doc__body">
+              <h3 class="h3">Доктор Хамза</h3>
+              <p class="muted">Мануальная терапия, восстановление опорно‑двигательного аппарата.</p>
+            </div>
           </article>
 
-          <article class="doc">
-            <div class="avatar" aria-hidden="true"></div>
-            <h3 class="h3">Мануальный терапевт</h3>
-            <p class="p">Мягкие техники • Шея/спина • Работа с мышечным дисбалансом.</p>
-            <button class="link" data-open-modal>Записаться к специалисту</button>
-          </article>
-
-          <article class="doc">
-            <div class="avatar" aria-hidden="true"></div>
-            <h3 class="h3">Врач‑косметолог</h3>
-            <p class="p">Эстетические протоколы • Сервис и приватность • План процедур.</p>
-            <button class="link" data-open-modal>Записаться к специалисту</button>
+          <article class="doc card">
+            <div class="doc__ph" aria-hidden="true">Фото</div>
+            <div class="doc__body">
+              <h3 class="h3">Косметолог</h3>
+              <p class="muted">Инъекционные и уходовые процедуры по показаниям.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="reviews" class="section section--soft">
+    <section class="section" id="reviews">
       <div class="container">
-        <div class="head">
+        <div class="section__head">
           <h2 class="h2">Отзывы</h2>
-          <p class="sub">Сделайте доверие измеримым: добавьте ссылки на площадки и верификацию.</p>
+          <p class="muted">Несколько цитат (можно заменить на реальные).</p>
         </div>
 
         <div class="grid grid--3">
-          <blockquote class="quote">
-            <p>«После консультации стало понятно, что делать и чего ждать. Всё спокойно и очень профессионально.»</p>
-            <footer>— Пациент, первичный приём</footer>
-          </blockquote>
-          <blockquote class="quote">
-            <p>«Без навязываний. Чисто, аккуратно, врач объяснил простым языком.»</p>
-            <footer>— Пациент, курс восстановления</footer>
-          </blockquote>
-          <blockquote class="quote">
-            <p>«Сервис как в дорогой клинике: быстро записали, напомнили, всё вовремя.»</p>
-            <footer>— Пациент, массаж</footer>
-          </blockquote>
+          <figure class="quote card">
+            <blockquote>“Стало легче уже после первого приёма. Всё объяснили спокойно и понятно.”</blockquote>
+            <figcaption class="muted">— Пациент</figcaption>
+          </figure>
+          <figure class="quote card">
+            <blockquote>“Понравился подход: без лишних назначений, только по делу.”</blockquote>
+            <figcaption class="muted">— Пациент</figcaption>
+          </figure>
+          <figure class="quote card">
+            <blockquote>“Очень аккуратно, без резких манипуляций. Рекомендую.”</blockquote>
+            <figcaption class="muted">— Пациент</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section id="contacts" class="section">
+    <section class="section" id="contacts">
       <div class="container">
-        <div class="contacts">
-          <div class="contacts__left">
-            <h2 class="h2">Контакты</h2>
-            <p class="sub">Добавьте адрес, время работы и карту (лучше лёгкую — ссылкой).</p>
-
-            <div class="contact-list">
-              <a class="contact" href="tel:+78123137464">
-                <span class="contact__k">Телефон</span>
-                <span class="contact__v">8 (812) 313‑74‑64</span>
-              </a>
-              <div class="contact">
-                <span class="contact__k">Адрес</span>
-                <span class="contact__v">Добавьте адрес клиники</span>
-              </div>
-              <div class="contact">
-                <span class="contact__k">Режим</span>
-                <span class="contact__v">Ежедневно, 09:00–21:00 (пример)</span>
-              </div>
-            </div>
-
-            <button class="btn btn--primary" data-open-modal>Записаться</button>
-          </div>
-
-          <div class="contacts__right" aria-label="Плейсхолдер карты">
-            <div class="map">
-              <div class="map__badge">Карта — добавим позже</div>
-              <div class="map__hint">Чтобы не тормозить Android, лучше вставлять карту по клику или ссылкой.</div>
-            </div>
-          </div>
+        <div class="section__head">
+          <h2 class="h2">Контакты</h2>
+          <p class="muted">Адрес/карта/мессенджеры — добавим как вам нужно.</p>
         </div>
 
-        <p class="disclaimer">Медицинские услуги имеют противопоказания. Требуется консультация специалиста.</p>
+        <div class="grid grid--2">
+          <div class="card contacts__left">
+            <p><strong>Телефон:</strong> <a class="link" href="tel:+78123137464">8&nbsp;(812)&nbsp;313‑74‑64</a></p>
+            <p><strong>Город:</strong> Санкт‑Петербург</p>
+            <p class="muted">Нажмите “Записаться”, чтобы оставить контакт.</p>
+            <button class="btn btn--primary btn--full" data-open-modal>Записаться</button>
+          </div>
+
+          <div class="card contacts__right">
+            <div class="map" role="img" aria-label="Карта (заглушка)"></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <div>© <span data-year></span> Клиника восстановительной медицины</div>
-      <a class="policy" href="#" aria-label="Политика конфиденциальности (заглушка)">Политика конфиденциальности</a>
+      <small class="muted">© <span data-year></span> Клиника доктора Хамза</small>
+      <a class="muted link" href="#top">Наверх</a>
     </div>
   </footer>
 
   <!-- Modal -->
   <div class="modal" data-modal hidden>
-    <div class="modal__backdrop" data-close-modal></div>
-    <div class="modal__dialog" role="dialog" aria-modal="true" aria-label="Запись на консультацию">
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-label="Запись на приём">
       <button class="modal__close" type="button" aria-label="Закрыть" data-close-modal>×</button>
-      <div class="modal__head">
-        <div class="modal__title">Запись на консультацию</div>
-        <div class="modal__sub">Оставьте контакт — перезвоним и уточним запрос.</div>
-      </div>
 
-      <form class="modal__form" data-lead-form>
+      <h2 class="h2">Запись на приём</h2>
+      <p class="muted">Оставьте контакт — мы перезвоним и подтвердим время.</p>
+
+      <form class="form" data-form>
         <label class="field">
           <span class="field__label">Имя</span>
-          <input class="input" name="name" autocomplete="name" placeholder="Например, Анна" />
+          <input class="input" name="name" autocomplete="name" required />
         </label>
 
         <label class="field">
           <span class="field__label">Телефон</span>
-          <input class="input" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 ___ ___‑__‑__" required />
+          <input class="input" name="phone" inputmode="tel" autocomplete="tel" required />
         </label>
 
         <label class="field">
-          <span class="field__label">Что беспокоит</span>
-          <textarea class="textarea" name="message" rows="4" placeholder="Например: боль в колене при ходьбе, 2 месяца"></textarea>
+          <span class="field__label">Комментарий (необязательно)</span>
+          <textarea class="textarea" name="comment" rows="3"></textarea>
         </label>
 
-        <button class="btn btn--primary btn--full" type="submit">Отправить заявку</button>
-        <p class="fine">Демо: форма пока не отправляет данные на сервер. Подключим к почте/CRM.</p>
+        <button class="btn btn--primary btn--full" type="submit">Отправить</button>
+        <p class="muted fineprint">Нажимая “Отправить”, вы соглашаетесь на обработку персональных данных.</p>
       </form>
     </div>
   </div>
