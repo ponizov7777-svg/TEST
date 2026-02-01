@@ -664,3 +664,23 @@ a{ color:inherit; }
 @media (prefers-reduced-motion: reduce){
   *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
 }
+.section,
+.hero,
+.footer,
+.mobile{
+  background: rgba(255,255,255,.40);
+  border-top: 1px solid rgba(255,255,255,.35);
+  border-bottom: 1px solid rgba(19,19,19,.06);
+}
+
+/* Если браузер умеет blur фона — включаем настоящий “frosted glass” */
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))){
+  .section,
+  .hero,
+  .footer,
+  .mobile{
+    background: rgba(255,255,255,.28);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+  }
+}
