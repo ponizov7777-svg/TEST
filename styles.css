@@ -664,20 +664,3 @@ a{ color:inherit; }
 @media (prefers-reduced-motion: reduce){
   *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
 }
-.section,
-.hero,
-.footer{
-  position: relative;
-}
-
-.section::before,
-.hero::before,
-.footer::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  border-radius: 0; /* у секций обычно без скруглений */
-  background: linear-gradient(180deg, rgba(255,255,255,.22), rgba(255,255,255,0));
-  opacity: .9;
-}
